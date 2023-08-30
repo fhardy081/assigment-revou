@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar{
+.navbar {
     background-color: white;
     color: black;
     height: 100px;
@@ -35,7 +35,7 @@
     justify-content: space-between;
 }
 
-nav{
+nav {
     padding-right: 2%;
 }
 
@@ -45,7 +45,7 @@ nav{
     padding-top: 10px;
 }
 
-.welcome{
+.welcome {
     padding-top: 18px;
     padding-left: 2%;
     padding-right: 2%;
@@ -53,7 +53,7 @@ nav{
     border: 1px solid black;
 }
 
-.headquarters{
+.headquarters {
     padding-top: 18px;
     padding-left: 2%;
     padding-right: 2%;
@@ -92,15 +92,15 @@ nav{
     padding-top: 5px;
 }
 
-.message{
+.message {
     padding-top: 18px;
     padding-left: 2%;
     padding-right: 2%;
-    height: 28vh;
+    height: auto;
     border: 1px solid black;
 }
 
-.message .flex{
+.message .flex {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -108,25 +108,76 @@ nav{
     gap: 135px;
 }
 
-.message-output{
+.message-output {
     border: 1px solid black;
     background-color: antiquewhite;
     width: 10%;
     height: 50%;
 }
 
-/* .message-input label > span{
-    width: 100px;
-    font-weight: bold;
-    float: left;
-    padding-top: 8px;
-    padding-right: 5px;
-} */
+/* Style for the entire form container */
+.message-input {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/* input[type=text], input[type=date], input[type=radio], textarea {
+/* Style for each individual field container */
+.field1,
+.field2,
+.field3,
+.field4,
+.field5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 12px;
+    margin-bottom: 15px;
+}
+
+/* Style for labels */
+label {
+    flex: 1;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Style for text input and date input */
+input[type="text"],
+input[type="date"] {
+    flex: 2;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for radio buttons */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Style for textarea */
+textarea {
+    flex: 2;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-} */
+}
+
+/* Style for submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
