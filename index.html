@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/script.js"></script>
+
 </head>
 
 <body>
@@ -27,7 +29,7 @@
 
     <!-- Welcoming Section -->
     <div class="welcome">
-        <h1>Hi Harfi, Welcome to Website</h1>
+        <h1>Welcome to Website</h1>
         <p>Ini adalah website latihan pertama</p>
         <div class="box"></div>
     </div>
@@ -67,10 +69,10 @@
                     </div>
                     <div class="field3">
                         <label for="gender">Jenis Kelamin: </label>
-                        <input type="radio" id="html" name="fav_language" value="HTML">
-                        <label for="html">HTML</label>
-                        <input type="radio" id="css" name="fav_language" value="CSS">
-                        <label for="css">CSS</label>
+                        <input type="radio" id="html" name="fav_language" value="Laki-laki">
+                        <label for="html">Laki-laki</label>
+                        <input type="radio" id="css" name="fav_language" value="Perempuan">
+                        <label for="css">Perempuan</label>
                     </div>
                     <div class="field4">
                         <label for="w3review">Message: </label>
@@ -83,13 +85,18 @@
                 </form>
             </div>
             <div class="message-output">
-                <p>output</p>
+                <p>Nama: <span id="output-nama"></span></p>
+                <p>Tanggal Lahir: <span id="output-tanggal"></span></p>
+                <p>Jenis Kelamin: <span id="output-jenis-kelamin"></span></p>
+                <p>Pesan: <span id="output-pesan"></span></p>
             </div>
         </div>
     </div>
 
     <!-- footer -->
-
+    <div class="footer">
+        <p>Created by Revou</p>
+    </div>
 </body>
 
 </html>
