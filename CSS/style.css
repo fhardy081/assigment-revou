@@ -57,34 +57,28 @@ nav {
     padding-top: 18px;
     padding-left: 2%;
     padding-right: 2%;
-    height: 28vh;
     border: 1px solid black;
-}
-
-.box {
-    background-color: white;
-    width: 100%;
-    height: 30vh;
-    overflow-y: hidden;
 }
 
 .item {
     text-align: center;
-    padding-top: 10px;
-    padding-right: 60px;
+    padding: 10px;
+    max-width: 33%; 
+    box-sizing: border-box; 
 }
 
 .item img {
-    overflow: hidden;
     border-radius: 50%;
-    width: 150px;
-    height: 150px
+    width: 100%; 
+    height: auto; 
+    max-width: 150px; 
 }
 
 .caption {
     display: block;
     padding-top: 5px;
 }
+
 
 .hq {
     display: flex;
