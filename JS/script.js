@@ -25,4 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('#output-jenis-kelamin').textContent = gender;
         document.querySelector('#output-pesan').textContent = message;
     });
+
 });
+

@@ -5,6 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Navbar */
 .navbar {
     background-color: white;
     color: black;
@@ -45,6 +46,7 @@ nav {
     padding-top: 10px;
 }
 
+/* Welcoming Section */
 .welcome {
     padding-top: 18px;
     padding-left: 2%;
@@ -53,6 +55,7 @@ nav {
     border: 1px solid black;
 }
 
+/* HQ Section */
 .headquarters {
     padding-top: 18px;
     padding-left: 2%;
@@ -63,15 +66,15 @@ nav {
 .item {
     text-align: center;
     padding: 10px;
-    max-width: 33%; 
-    box-sizing: border-box; 
+    max-width: 33%;
+    box-sizing: border-box;
 }
 
 .item img {
     border-radius: 50%;
-    width: 100%; 
-    height: auto; 
-    max-width: 150px; 
+    width: 100%;
+    height: auto;
+    max-width: 150px;
 }
 
 .caption {
@@ -87,6 +90,7 @@ nav {
     padding-top: 5px;
 }
 
+/* Message */
 .message {
     padding-top: 18px;
     padding-left: 2%;
@@ -100,14 +104,14 @@ nav {
     flex-direction: row;
     justify-content: flex-start;
     height: 100%;
-    gap: 135px;
+    gap: 6%;
 }
 
 .message-output {
     border: 1px solid black;
     background-color: white;
     width: 50%;
-    height: 50%;    
+    height: 50%;
 }
 
 .message-output p {
@@ -115,7 +119,7 @@ nav {
 }
 
 .message-input {
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,7 +165,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: 	#D3D3D3;
+    background-color: #D3D3D3;
     color: black;
     padding: 10px 20px;
     border: 1px solid black;
@@ -174,7 +178,7 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-.footer{
+.footer {
     padding-top: 18px;
     padding-left: 2%;
     padding-right: 2%;
@@ -182,6 +186,39 @@ input[type="submit"]:hover {
     border: 1px solid black;
 }
 
-.footer p{
+.footer p {
     text-align: right;
+    padding-top: 18px;
+}
+
+/* Phone */
+@media only screen and (max-width: 768px) {
+    .navbar nav {
+        display: none;
+    }
+
+    .message .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .message-input {
+        padding-top: 20px;
+    }
+
+    .message-input form {
+        width: 100%;
+    }
+
+    .message-output {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .footer .p {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
 }
