@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/profile.css">
+    <!-- <script src="./JS/script.js"></script> -->
 </head>
 
 <body>
@@ -15,6 +16,11 @@
                 <img src="https://assets-global.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c11efc60b6d_RevoU.svg"
                     class="logo">
                 <nav>
+                    <div class="menu-toggle">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">Our Profile</a></li>
@@ -33,6 +39,25 @@
                 deserunt mollit anim id est laborum."</p>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navbar = document.querySelector(".navbar");
+
+            // Toggle the menu when the hamburger icon is clicked
+            menuToggle.addEventListener("click", function () {
+                navbar.classList.toggle("active");
+            });
+
+            // Close the menu when clicking outside of it
+            document.addEventListener("click", function (event) {
+                if (!navbar.contains(event.target) && !menuToggle.contains(event.target)) {
+                    navbar.classList.remove("active");
+                }
+            });
+
+        });
+    </script>
 </body>
 
 </html>
